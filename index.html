@@ -172,7 +172,7 @@
                 const lng = position.coords.longitude;
                 
                 let dist = getDistance(lat, lng, targetLat, targetLng);
-                if (dist > 50) dist = 50; // 50km上限
+                if (dist > 40) dist = 40; // 50km上限
                 currentDistance = dist;
 
                 // ポイント計算: 100 * (1.1^d)
